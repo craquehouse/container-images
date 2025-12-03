@@ -261,8 +261,8 @@ jobs:
         uses: actions/create-github-app-token@7e473efe3cb98aa54f8d4bac15400b15fad77d94 # v2.2.0
         id: app-token
         with:
-          app-id: ${{ secrets.LAB_ASSISTANT_APP_ID }}
-          private-key: ${{ secrets.LAB_ASSISTANT_APP_KEY }}
+          app-id: ${{ secrets.CRAQUEBOT_APP_ID }}
+          private-key: ${{ secrets.CRAQUEBOT_APP_KEY }}
 
       - name: Run App Tests
         uses: ./.github/actions/app-tests
@@ -303,8 +303,8 @@ jobs:
         uses: actions/create-github-app-token@7e473efe3cb98aa54f8d4bac15400b15fad77d94 # v2.2.0
         id: app-token
         with:
-          app-id: ${{ secrets.LAB_ASSISTANT_APP_ID }}
-          private-key: ${{ secrets.LAB_ASSISTANT_APP_KEY }}
+          app-id: ${{ secrets.CRAQUEBOT_APP_ID }}
+          private-key: ${{ secrets.CRAQUEBOT_APP_KEY }}
 
       - name: Get App Options
         uses: ./.github/actions/app-options

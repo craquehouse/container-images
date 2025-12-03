@@ -24,8 +24,8 @@ jobs:
         uses: actions/create-github-app-token@7e473efe3cb98aa54f8d4bac15400b15fad77d94 # v2.2.0
         id: app-token
         with:
-          app-id: ${{ secrets.LAB_ASSISTANT_APP_ID }}
-          private-key: ${{ secrets.LAB_ASSISTANT_APP_KEY }}
+          app-id: ${{ secrets.CRAQUEBOT_APP_ID }}
+          private-key: ${{ secrets.CRAQUEBOT_APP_KEY }}
 
       - name: Stale
         uses: actions/stale@5f858e3efba33a5ca4407a664cc011ad407f2008 # v10.1.0

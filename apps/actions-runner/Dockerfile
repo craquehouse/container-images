@@ -19,7 +19,7 @@ RUN \
         moreutils \
         python3-pip \
         wget \
-        yamlfmt \
+        yamllint \
         zstd \
     && \
     case "${TARGETARCH}" in \

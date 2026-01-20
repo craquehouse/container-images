@@ -15,7 +15,7 @@ RUN \
     && \
     apt-get -qq install -y --no-install-recommends --no-install-suggests \
         ca-certificates \
-        go \
+        golang \
         jo \
         moreutils \
         python3-pip \
@@ -37,10 +37,7 @@ RUN \
         && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
         && apt update \
         && apt install gh -y \
-    && go get github.com/home-operations/containers/testhelpers \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
-    
-
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 USER runner
 

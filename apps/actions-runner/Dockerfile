@@ -18,6 +18,7 @@ RUN \
         golang \
         jo \
         moreutils \
+        pipx \
         python3-pip \
         wget \
         yamllint \
